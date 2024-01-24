@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+
+
+<hr>
+
+
+{% for k in veri %}
+
+<div class="container"  style="border-radius: 8px">
+  <div class="card" style="width: 18rem;">
+       <div class="card-body">
+         <a href="urundetay/{{k[0]}}"><h5 class="card-title">{{k[1]}}</h5></a>
+         <p class="card-text">{{k[2]}}</p>
+         <a href="urunguncelle/{{k[0]}}" class="btn btn-primary">Güncelle</a>
+         <a href="urunsil/{{k[0]}}" class="btn btn-primary">Sil</a>
+       </div>
+   </div>
+</div>
+
+{% endfor %}
+
+
+<hr>
+
+{% endblock %}

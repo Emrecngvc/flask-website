@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+<h6>kitap Güncelle</h6>
+
+<form method="post">
+    <input type="hidden"  name="urunID" value="{{veri[0]}}"><br>
+    <label>Ürün Adı :</label>
+    <input type="text" name="urunTitle"  value="{{veri[1]}}"><br>
+    <label>Ürün fiyatı :</label>
+    <input type="text" name="urunPrice"  value="{{veri[2]}}"><br>
+    <input type="submit"  value="Sepete ekle">
+
+</form>
+
+
+{% endblock %}
